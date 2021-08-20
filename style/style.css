@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* =========CSS Varibal Created Here======= */
+    :root{
+        --text-color:#FFFFFF;
+        --color-text1:#454545;
+        --color-trext2:#000000;
+        --background-color:#f5a9a0;
+        --box-shadow:0 4px 16px rgb(0 0 0 / 10%);
+    }
+/* ======X==CSS Varibal Created Here==X==== */
+
+/* ========Global Classes Styleing Here============ */
+    ul{
+        list-style-type: none;
+    }
+    .d-flex{
+        display: flex;
+    }
+    .col{
+        flex-basis: 75%;
+    }
+    .col-3{
+        flex-basis:25%;
+    }
+    .col-2{
+        flex-basis:50%;
+    }
+/* =====X==Global Classes Styleing Here==X========= */
+
+/* ========Container Styleing Here============ */
+    .container{
+        width: 100%;
+        padding-top:50px;
+        align-items:center;
+    }
+    /* ========Left Container Styling Here========= */
+        /* =======profile styleing======= */
+            .left .personal_profile{
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+            .left .personal_profile img{
+                width: 200px;
+                border-radius: 50%;
+                box-shadow: var(--box-shadow);
+            }
+            .left .personal_profile h1{
+                color:var(--color-text1);
+                font-weight:500;
+                text-transform:uppercase;
+                margin-top:10px;
+            }
+            .left .personal_profile h2{
+                font-size:30px;
+                color:var(--color-text2);
+                font-weight:600;
+                text-transform:uppercase;
+            }
+            .left .personal_profile p{
+                color:var(--color-text1);
+                text-transform:uppercase;
+                font-weight:500;
+            }
+        /* ====X==profile styleing==X==== */
+
+        /* ======Contyact Styling======= */
+            /* ========Contact Info====== */
+                .left .contact_info{
+                    cursor: pointer;
+                    margin-top:50px;
+                    background-color:var(--background-color);
+                    padding:0px 50px 50px 50px;
+                }
+                .left .contact_info .info_personal h2{
+                    text-align: center;
+                    background-color:var(--color-text1);
+                    color:var(--text-color);
+                    position: relative;
+                    bottom:15px;
+                    text-transform:uppercase;
+                    font-weight:500;
+                    padding:5px 0px;
+                }
+                .left .contact_info .info_personal ul li,.left .contact_info .info_contact ul li,.left .contact_info .hobies ul li{
+                    align-items:center;
+                }
+                .left .contact_info .info_personal ul li span,.left .contact_info .info_contact ul li span,.left .contact_info .hobies ul li span{
+                    margin:8px;
+                    text-transform:capitalize;
+                    color:var(--color-text1);
+                    font-weight:500;
+                }
+                .left .contact_info .info_personal ul li span .fas{
+                    font-size: 20px;
+                }
+                .left .contact_info .info_contact h2, .left .contact_info .languages h2,.left .contact_info .hobies h2{
+                    margin-top:20px;
+                    margin-bottom:10px;
+                    text-align: center;
+                    background-color:var(--color-text1);
+                    color:var(--text-color);
+                    text-transform:uppercase;
+                    font-weight:500;
+                    padding:5px 0px;
+                }
+                .left .contact_info .info_contact ul li span .fa-twitter,.left .contact_info .info_contact ul li span .fa-youtube{
+                    padding:5px;
+                    background-color:var(--color-text1);
+                    border-radius: 50%;
+                    color: var(--text-color);
+                }
+                .left .contact_info .info_contact ul li span .fa-facebook-f,.left .contact_info .info_contact ul li span .fa-instagram{
+                    padding:5px 7px;
+                    background-color:var(--color-text1);
+                    border-radius: 50%;
+                    color: var(--text-color);
+                }
+            /* ====X===Contact Info=X==== */
+
+            /* ========languages========== */
+                .left .contact_info .languages .laanguage_row .language_sub{
+                    justify-content:space-between;
+                    align-items:center;
+                }
+                .left .contact_info .languages .laanguage_row .language_sub ul li{
+                    text-transform:uppercase;
+                    font-size:16px;
+                    color: var(--color-text1);
+                    font-weight:500;
+                }
+                .left .contact_info .languages .laanguage_row .language_sub ul li .fas{
+                    font-size:13px;
+                    margin:0px 3px;
+                }
+                .left .contact_info .languages .laanguage_row .language_sub ul li .far{
+                    font-size:13px;
+                    margin:0px 3px;
+                    background-color:var(--text-color);
+                    color:var(--text-color);
+                    border-radius: 50%;
+                }
+            /* =====X==languages===X====== */
+        /* ====X=Contyact Styling===X=== */
+    /* =====X==Left Container Styling Here==X====== */
+
+    /* ========Right Container Styling Here ======== */
+        .right{
+            padding:0px 50px;
+            cursor: pointer;
+        }
+
+        /* =====About Section Styling Here===== */
+            .right .about .headding,.right .eduction .headding,.right .skills .headding{
+                align-items: center;
+            }
+            .right .about .headding .fa-user-alt,.right .eduction .headding .fas,.right .skills .headding .fas{
+                background-color: var(--background-color);
+                padding:10px;border-radius: 50%;
+            }
+            .right .about .headding .border,.right .eduction .headding .border h2,.right .skills .headding .border h2{
+                color: var(--color-text1);
+                text-transform: uppercase;
+                font-weight:600;
+            }
+            .right .about .headding .border,.right .eduction .headding .border,.right .skills .headding .border{
+                margin-left:10px;
+                width: 100%;
+                border-bottom:2px solid var(--color-text1);
+            }
+            .right .about .about_info{
+                margin-top: 20px;
+            }
+            .right .about .about_info p,.right .eduction .eduction_history .history_body p{
+                text-align:justify;
+                color: var(--color-text1);
+            }
+        /* ===X=About Section Styling Here=X=== */
+
+        /* ===========Eduction Section Styleing===== */
+            .right .eduction{
+                margin-top: 25px;
+            }
+            .right .eduction .eduction_history{
+                margin-top: 20px;
+            }
+            .right .eduction .eduction_history .history_body, .right .skills .skill_row{
+                margin:20px 0px;
+            }
+            .right .eduction .eduction_history .history_body h3{
+                justify-content:space-between;
+                align-items:center;
+                text-transform: uppercase;
+                color:var(--color-text1);
+                font-weight:600;
+            }
+            .right .eduction .eduction_history .history_body h3 .date{
+                font-size:16px;
+                font-weight:normal;
+            }
+            .right .eduction .eduction_history .history_body h3 span .fa-angle-right{
+                margin-right:5px;
+                font-size:18px;
+            }
+        /* ========X==Eduction Section Styleing=X=== */
+
+        /* ==========Skills Section Styling======== */
+            .skill_row .skill_body .skill_iteam .skill_sub{
+                justify-content:space-evenly;
+                align-items:center;
+            }
+            .skill_row .skill_body .skill_iteam .skill_sub ul li{
+                text-transform: uppercase;
+                color:var(--color-text1);
+                font-weight:500;
+                font-size:18px;
+            }
+            .skill_row .skill_body .skill_iteam .skill_sub ul li .fas{
+                font-size:13px;
+                margin:0px 3px;
+            }
+            .skill_row .skill_body .skill_iteam .skill_sub ul li .far{
+                font-size:13px;
+                margin:0px 3px;
+                background-color:#ccc;
+                color:var(--text-color);
+                border-radius: 50%;
+            }
+        /* =======X==Skills Section Styling==X===== */
+    /* =====X==Right Container Styling Here ==X===== */
+
+/* =====X==Container Styleing Here==X========= */
+
+/* ===========Responsiveness Added Here========== */
+    @media(max-width:1000px){
+        .container{
+            flex-direction: column;
+        }
+        .right{
+            margin-top:25px;
+        }
+        .col{
+            flex-basis: 100%;
+        }
+        .col-3{
+            flex-basis:100%;
+        }
+        .left .contact_info{
+            margin-top:50px;
+            padding:0px 50px 50px 50px;
+        }
+    }
+    @media(max-width:500px){
+        .right{
+            padding:10px;
+        }
+        .right .about .headding,.right .eduction .headding,.right .skills .headding{
+            flex-direction: column;
+            justify-content:center;
+        }
+        .right .about .headding .border,.right .eduction .headding .border h2,.right .skills .headding .border h2{
+            text-align: center;
+        }
+        .skill_row .skill_body{
+            flex-direction:column;
+        }
+        .skill_row .skill_body .skill_iteam .skill_sub{
+            margin-top:10px;
+        }
+        .right .eduction .eduction_history .history_body h3{
+            flex-direction:column;
+        }
+        .right .about .about_info p,.right .eduction .eduction_history .history_body p{
+            margin-top:10px;
+        }
+    }
+/* ========X==Responsiveness Added Here==X======= */
